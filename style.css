@@ -12,8 +12,6 @@ body {
   align-items: center;
   flex-direction: column;
   background: linear-gradient(to right top, #ffe6f0, #ffb3cc);
-  font-family: "Dancing Script", cursive;
-  font-size: 36px;
   color: #a066ff;
 }
 
@@ -53,7 +51,7 @@ body {
   padding: 24px 28px;
   font-size: 1.1rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 30px;
   color: #fff;
   background: linear-gradient(to left, #a00f3f 50%, #d81b60 50%);
   background-size: 200% 100%;
@@ -120,6 +118,10 @@ body {
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+
+  .container{
+    margin-block-start: 500px;
+  }
  
   .mainContainer h1 {
     font-size: 80px;
@@ -129,7 +131,7 @@ body {
   .text-wrap p {
     block-size: 30vh;
     font-size: 28px;
-    margin-block-start: 50px;
+    margin-block-start: 50px; 
     padding: 10px;
   }
 
@@ -143,7 +145,7 @@ body {
   }
 
   .birthday-pic img {
-    inline-size: 90%;
+    inline-size: 100%;
     margin-block-start: 50px;
   }
 
@@ -155,25 +157,25 @@ body {
 
 /* Extra small screens (phones) */
 @media (max-width: 480px) {
-  body {
-    font-size: 80px;
+  h1{
+    font-size: 58px;
+    font-family: "Dancing Script", cursive;
   }
-
   .gift {
-    font-size: 100px;
+    font-size: 361px;
   }
 
   .text-wrap p {
-    block-size: 25vh;
-    font-size: 14px;
+    block-size: 65vh;
+    font-size: 40px;
   }
 
   #surpriseBtn {
-    padding: 12px 16px;
-    font-size: 0.9rem;
+    padding: 46px 12px;
+    font-size: 4.9rem;
   }
 
   .mainContainer h1 {
-    font-size: 20px;
+    font-size: 51px;
   }
 }
